@@ -6,7 +6,7 @@ public class Pilha {
 	int topo = -1;
 	public Pilha() {
 		
-		this.letras = new char[10];
+		this.letras = new char[50];
 		this.topo = topo;
 	}
 	
