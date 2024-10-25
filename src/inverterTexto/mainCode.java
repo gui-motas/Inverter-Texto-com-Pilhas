@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class mainCode {
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Digite uma palavra");
 		String input = sc.nextLine();
@@ -31,49 +32,35 @@ public class mainCode {
 
 		}
 
-		verificapalindromo(palavra,palavrainversa);
-		
-System.out.println("Palavra inversa: "+palavrainversa);
+		verificapalindromo(palavra, palavrainversa);
 
-		
+		System.out.println("Palavra inversa: " + palavrainversa);
 
-		
+		if (verificapalindromo(palavra, palavrainversa)) {
 
-		if (verificapalindromo(palavra,palavrainversa)) {
+			
+			System.out.println("O que foi escrito é um palíndromo!");
 
-		System.out.println("O que foi escrito é um palíndromo!");
-
-		return;
+			return;
 
 		}
 
-		
-
 		System.out.println("O que foi escrito não é um palíndromo!");
-
-		
 
 	}
 
-	
-
-	
-
 	public static boolean verificapalindromo(String palavra, String palavrainversa) {
 
-		
-
-		for(int i = 0;i<palavra.length();i++) {
+		for (int i = 0; i < palavra.length(); i++) {
 
 			if (palavra.charAt(i) == palavrainversa.charAt(i));
 
-			else return false;
+			else
+				return false;
 
-		} 
-
-		
+		}
 
 		return true;
 
 	}
-	}
+}

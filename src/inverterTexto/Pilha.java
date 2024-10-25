@@ -4,6 +4,8 @@ public class Pilha {
 
 	char letras [];
 	int topo = -1;
+	
+	
 	public Pilha() {
 		
 		this.letras = new char[50];
@@ -11,7 +13,6 @@ public class Pilha {
 	}
 	
 	public void push(char e) {
-		
 		topo++;
 		letras[topo] = e;
 	}
@@ -25,8 +26,6 @@ public class Pilha {
 	
 	public boolean isEmpty() {
 		return (topo == -1);
-		
-		
 	}
 	public boolean isFull() {
 		return (topo == 9);
